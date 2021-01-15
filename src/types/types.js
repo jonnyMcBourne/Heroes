@@ -1,0 +1,1 @@
+export const typesLogin={ LOGIN:"LOGIN", LOGOUT:"LOGOUT",}
