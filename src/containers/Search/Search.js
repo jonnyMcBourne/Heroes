@@ -28,7 +28,7 @@ export const SearchScreen = ({ history, location }) => {
     if (text === "") {
       setValue(q);
     }
-  }, []);
+  }, [text,q]);
 
   useEffect(() => {
     if (text === "") {
@@ -39,7 +39,7 @@ export const SearchScreen = ({ history, location }) => {
       setIsDisabled(false);
       setValue(text);
     }
-  }, [text]);
+  }, [text,reset]);
 
   //data
   const heroesFiltered = getheroesByName(q);
