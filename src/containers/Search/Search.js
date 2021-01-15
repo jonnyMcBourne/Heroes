@@ -14,7 +14,6 @@ import { useForm } from "../../hooks/useForm";
 s
 */
 export const SearchScreen = ({ history, location }) => {
- 
   //state
   const [{ text }, handleInputChange, reset] = useForm({ text: "" });
   const [value, setValue] = useState("");
@@ -24,7 +23,6 @@ export const SearchScreen = ({ history, location }) => {
   const trimmed = locationhook.search.substring(1);
   const parsed = queryString.parse(trimmed);
   const { q } = parsed;
-  
 
   useEffect(() => {
     if (text === "") {

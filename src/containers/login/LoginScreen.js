@@ -3,7 +3,7 @@ import {AuthContext} from '../../auth/authContext'
 
 export const LoginScreen = ({history}) => {
 
- const {user,dispatch} = useContext(AuthContext)
+ const {dispatch} = useContext(AuthContext)
   const handleClick =()=>{
       const lastPath=localStorage.getItem('lastPath')||'/'
   dispatch({type:"LOGIN", payload:"McBourne"})

@@ -8,9 +8,9 @@ export const MarvelScreen = () => {
 
   useEffect(() => {
     if (user.user) {
-      localStorage.setItem("user", JSON.stringify(user));
+      localStorage.setItem('user', JSON.stringify(user));
     }
-  }, [user.user]);
+  }, [user]);
 
   return (
     <div>
